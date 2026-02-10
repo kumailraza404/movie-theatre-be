@@ -7,6 +7,7 @@ import { MoviesModule } from "./movies/movies.module";
 import { ShowtimesModule } from "./showtimes/showtimes.module";
 import { ReservationsModule } from "./reservations/reservations.module";
 import { RedisService } from "./config/redis.config";
+import { HealthController } from "./health/health.controller";
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { RedisService } from "./config/redis.config";
     ShowtimesModule,
     ReservationsModule,
   ],
+  controllers: [HealthController],
   providers: [RedisService],
   exports: [RedisService],
 })

@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs (will be built in container)
+dist/
+build/
+*.tsbuildinfo
+
+# Environment files (use Koyeb env vars instead)
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage/
+.nyc_output/
+test/
+*.test.ts
+*.spec.ts
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+!README.md
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Docker files (don't need in image)
+docker-compose.yml
+Dockerfile
+.dockerignore
